@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>
+        flexReport
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+          
+        }
+
+        .layout {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 960px;
+            height: 100%;
+            max-height: 800px;
+            border: 1px solid blue
+            
+        }
+
+        .header {
+            height: 80px;
+            background-color:blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display:flex;
+            flex-flow: column;
+        }
+
+        .cont {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: space-around
+        }
+
+        .sidebar {
+            /* flex-grow: 1; */
+            background-color: aqua;
+            flex-basis: 200px;
+            border: rgb(153, 217, 24) solid;
+            padding-right: 5px;
+            
+        }
+
+        .bod {
+            flex-grow: 1;
+            background-color:bisque;
+            width: 200px;
+            border: rgb(153, 217, 24) solid;
+            padding-right: 5px;
+
+        }
+
+        .links {
+            /* flex-grow: 1; */
+            background-color: aqua;
+            width: 200px;
+            border: rgb(153, 217, 24) solid;
+            padding-right: 5px;
+        }
+
+        .footer {
+            background-color:blue;
+            color: white;
+            height: 80px;
+            padding: 20px;
+            text-align: center
+        }
+        .alink{
+            /* align-items: center; */
+            
+            display:flex;
+            justify-content: flex-end;
+            flex-direction:row;
+            /* margin: auto; */
+        /* width: 40px;
+        height: 10px; */
+        }
+        .alink a{
+            text-decoration: none;
+            padding-left: 20px;
+            margin-right: 30px;
+            margin-top: 50px;
+        }
+        .alink a:hover{
+            color:white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=layout><div>
+      <header class=header>The header
+      <div class="alink"> 
+         <a href="https://web.whatsapp.com/">Contact</a>
+        <a href="https://web.whatsapp.com/">Home</a>
+        <a href="https://web.whatsapp.com/">About</a>
+    </div>
+    </header>
+</div>
+        <content class=cont>
+            <div class=sidebar><h2>sidebar</h2></div>
+            <div class=bod><h2>body</h2></div>
+            <div class=links>
+                <h2>links</h2>
+                <a href="https://web.whatsapp.com/">Contact</a><br>
+                <a href="https://web.whatsapp.com/">Home</a><br>
+                <a href="https://web.whatsapp.com/">About</a><br>
+            </div>
+        </content>
+        <footer class=footer><h1>The Footer</h1></a></footer>
+    </div>
+</body>
+
+</html> 
